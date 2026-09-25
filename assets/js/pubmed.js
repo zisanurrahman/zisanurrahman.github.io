@@ -80,8 +80,14 @@ async function loadPubMedPublications() {
       .filter(p => p.year > 0)
       .sort((a, b) => b.year - a.year || b.uid - a.uid);
 
+    // Hide a preprint when the peer-reviewed version of the same title is present
+    const norm = t => (t || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const isPreprint = p => /biorxiv|medrxiv|researchsquare|preprint/i.test(p.source || '');
+    const journalTitles = new Set(papers.filter(p => !isPreprint(p)).map(p => norm(p.title)));
+    const deduped = papers.filter(p => !(isPreprint(p) && journalTitles.has(norm(p.title))));
+
     const byYear = {};
-    papers.forEach(p => {
+    deduped.forEach(p => {
       if (!byYear[p.year]) byYear[p.year] = [];
       byYear[p.year].push(p);
     });
@@ -115,7 +121,7 @@ async function loadPubMedPublications() {
 
     // Update metric numbers if elements exist
     const totalEl = document.getElementById('metric-total-pubs');
-    if (totalEl) totalEl.textContent = papers.length;
+    if (totalEl) totalEl.textContent = deduped.length;
 
   } catch (err) {
     if (status) status.textContent = 'Could not load publications. See Google Scholar for the full list.';
