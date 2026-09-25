@@ -9,7 +9,7 @@ extra_js: /assets/js/pubmed.js
   <div class="container">
     <p class="page-hero-tag">Publications</p>
     <h1>Publications</h1>
-    <p>Full list on <a href="https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en" target="_blank">Google Scholar</a>. <strong>ASMZ Rahman</strong> indicates primary/corresponding author contribution.</p>
+    <p>Loaded automatically from PubMed. Full list and citation data on <a href="https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>. Code accompanying several papers is on the <a href="/projects">Projects</a> page.</p>
   </div>
 </div>
 

@@ -16,7 +16,8 @@ needs touching.
 | Path | Purpose |
 |------|---------|
 | `/Users/zisanurrahman/Documents/GitHub/portfolio-site/` | **Root — all source files live here** |
-| `preview/index.html` etc. | **Open these directly in browser to preview** (no server needed) |
+| https://zisanurrahman.github.io | **Live site** — the preview is the deployed site (old `preview/` folder removed 2026-09-25) |
+| `projects.md` | Software & pipelines page (GitHub repos, Shiny app) |
 | `index.md` | Home page content |
 | `about.md` | Bio, education, awards, sidebar links |
 | `research.md` | Research areas + skills/methods |
@@ -34,7 +35,8 @@ needs touching.
 ## What is done ✅
 
 - [x] Multi-page Jekyll site: Home, About, Research, Publications, Contact
-- [x] Dark mode design (cyan accent `#22d3ee`, Inter + JetBrains Mono fonts)
+- [x] Light professional design (teal accent `#0e6b60`, Source Serif 4 headings + Inter body) — replaced dark theme 2026-09-25
+- [x] Site positioned as Computational Biologist / Bioinformatician; Projects page lists open-source tools
 - [x] Sticky navbar, mobile hamburger menu, active-page highlighting
 - [x] Profile photo (`zisanur.png`) wired in on Home and About pages
 - [x] **PubMed auto-fetch** — publications load live from NCBI using ORCID `0000-0001-7566-1696`

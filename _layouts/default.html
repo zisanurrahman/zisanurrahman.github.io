@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}" />
+  <title>{% if page.title and page.slug != 'index' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <meta name="author" content="{{ site.author.name }}" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314213a'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-weight='700' font-size='32' fill='%23ffffff' text-anchor='middle'%3EZR%3C/text%3E%3C/svg%3E" />
+  <!-- Open Graph / link previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{% if page.title and page.slug != 'index' %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:image" content="{{ '/assets/img/zisanur.png' | absolute_url }}" />
+  <meta name="twitter:card" content="summary" />
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body class="page-{{ page.slug | default: 'home' }}">
 
@@ -16,16 +28,17 @@
   <div class="nav-inner">
     <a class="nav-brand" href="{{ '/' | relative_url }}">
       <span class="nav-brand-name">{{ site.author.name }}</span>
-      <span class="nav-brand-title">{{ site.author.title }} &middot; UManitoba</span>
+      <span class="nav-brand-title">Computational Biology &middot; Bioinformatics</span>
     </a>
     <ul class="nav-links">
-      <li><a href="{{ '/' | relative_url }}"{% if page.slug == 'index' or page.url == '/' %} class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/' | relative_url }}"{% if page.slug == 'index' %} class="active"{% endif %}>Home</a></li>
       <li><a href="{{ '/about' | relative_url }}"{% if page.slug == 'about' %} class="active"{% endif %}>About</a></li>
       <li><a href="{{ '/research' | relative_url }}"{% if page.slug == 'research' %} class="active"{% endif %}>Research</a></li>
+      <li><a href="{{ '/projects' | relative_url }}"{% if page.slug == 'projects' %} class="active"{% endif %}>Projects</a></li>
       <li><a href="{{ '/publications' | relative_url }}"{% if page.slug == 'publications' %} class="active"{% endif %}>Publications</a></li>
       <li><a href="{{ '/contact' | relative_url }}"{% if page.slug == 'contact' %} class="active"{% endif %}>Contact</a></li>
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
   </div>
 </nav>
 
@@ -40,23 +53,25 @@
       &mdash; {{ site.author.department }}, {{ site.author.institution }}
     </div>
     <div class="footer-links">
-      {% if site.author.scholar %}<a href="{{ site.author.scholar }}" target="_blank">Google Scholar</a>{% endif %}
-      {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a>{% endif %}
-      {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank">GitHub</a>{% endif %}
+      {% if site.author.scholar %}<a href="{{ site.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a>{% endif %}
+      {% if site.author.github %}<a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if site.author.orcid %}<a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>{% endif %}
+      {% if site.author.linkedin %}<a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
     </div>
   </div>
 </footer>
 
 {% if page.extra_js %}<script src="{{ page.extra_js | relative_url }}"></script>{% endif %}
 <script>
-  // Navbar scroll shadow
   const nb = document.getElementById('navbar');
   window.addEventListener('scroll', () => nb.classList.toggle('scrolled', scrollY > 10));
-  // Mobile toggle
   const tog = document.querySelector('.nav-toggle');
   const nl  = document.querySelector('.nav-links');
   if (tog) {
-    tog.addEventListener('click', () => nl.classList.toggle('open'));
+    tog.addEventListener('click', () => {
+      const open = nl.classList.toggle('open');
+      tog.setAttribute('aria-expanded', open);
+    });
     nl.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nl.classList.remove('open')));
   }
 </script>

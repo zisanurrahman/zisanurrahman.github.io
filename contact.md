@@ -8,7 +8,7 @@ slug: contact
   <div class="container">
     <p class="page-hero-tag">Contact</p>
     <h1>Get in Touch</h1>
-    <p>Open to collaborations, speaking invitations, and opportunities in academia and industry.</p>
+    <p>Open to collaborations on metagenomics, machine learning and antimicrobial resistance, as well as speaking invitations and opportunities in academia and industry.</p>
   </div>
 </div>
 

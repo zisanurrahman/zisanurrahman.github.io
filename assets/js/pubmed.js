@@ -18,6 +18,7 @@ const BADGE_MAP = {
   'npj antimicrob resist':  { cls: 'badge-npj',  label: 'npj A&R' },
   'acs synth biol':         { cls: 'badge-acs',  label: 'ACS Synth Bio' },
   'j cheminform':           { cls: 'badge-jci',  label: 'J Cheminform' },
+  'cell rep':               { cls: 'badge-cell', label: 'Cell Reports' },
 };
 
 async function loadPubMedPublications() {

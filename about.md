@@ -2,13 +2,14 @@
 layout: default
 title: About
 slug: about
+description: About A S M Zisanur Rahman, computational biologist and bioinformatician at the University of Manitoba.
 ---
 
 <div class="page-hero">
   <div class="container">
     <p class="page-hero-tag">About</p>
     <h1>A S M Zisanur Rahman</h1>
-    <p>Postdoctoral Researcher &mdash; Department of Animal Science, University of Manitoba</p>
+    <p>Computational Biologist &amp; Bioinformatician &mdash; Postdoctoral Researcher, Department of Animal Science, University of Manitoba</p>
   </div>
 </div>
 
@@ -22,46 +23,38 @@ slug: about
           <img src="/assets/img/zisanur.png" alt="A S M Zisanur Rahman" />
         </div>
         <div class="sidebar-links">
-          <a class="sidebar-link" href="https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en" target="_blank">
-            <span class="sidebar-link-icon">&#127891;</span> Google Scholar
-          </a>
-          <a class="sidebar-link" href="https://www.linkedin.com/in/zisanur-rahman-phd-07a81862/" target="_blank"><span class="sidebar-link-icon">&#128188;</span> LinkedIn</a>
-          <a class="sidebar-link" href="https://github.com/zisanurrahman" target="_blank"><span class="sidebar-link-icon">&#128187;</span> GitHub</a>
-          <a class="sidebar-link" href="https://www.researchgate.net/profile/Zisanur-Rahman" target="_blank"><span class="sidebar-link-icon">&#128203;</span> ResearchGate</a>
-          <a class="sidebar-link" href="https://orcid.org/0000-0001-7566-1696" target="_blank"><span class="sidebar-link-icon">&#128279;</span> ORCID</a>
+          <a class="sidebar-link" href="https://github.com/zisanurrahman" target="_blank" rel="noopener"><span class="sidebar-link-icon">&#128187;</span> GitHub</a>
+          <a class="sidebar-link" href="https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en" target="_blank" rel="noopener"><span class="sidebar-link-icon">&#127891;</span> Google Scholar</a>
+          <a class="sidebar-link" href="https://orcid.org/0000-0001-7566-1696" target="_blank" rel="noopener"><span class="sidebar-link-icon">&#128279;</span> ORCID</a>
+          <a class="sidebar-link" href="https://www.linkedin.com/in/zisanur-rahman-phd-07a81862/" target="_blank" rel="noopener"><span class="sidebar-link-icon">&#128188;</span> LinkedIn</a>
+          <a class="sidebar-link" href="https://www.researchgate.net/profile/Zisanur-Rahman" target="_blank" rel="noopener"><span class="sidebar-link-icon">&#128203;</span> ResearchGate</a>
           <!-- <a class="sidebar-link" href="/assets/CV_Rahman.pdf" target="_blank"><span class="sidebar-link-icon">&#128196;</span> Download CV (PDF)</a> -->
         </div>
       </aside>
 
-      <!-- Main bio content — edit this section freely -->
+      <!-- Main bio content -->
       <div class="about-content">
 
-I am a **Postdoctoral Researcher** in the Department of Animal Science at the University of Manitoba,
-where I study the gut microbiome of livestock animals using metagenomics and computational biology
-approaches. My work aims to understand how microbial communities influence animal health, production
-efficiency, and antimicrobial resistance.
+<p class="lead">I am a computational biologist who builds the pipelines and models that turn sequencing and screening data into answers about microbes, antibiotics and resistance.</p>
 
-I completed my **PhD in Microbiology** at the Department of Microbiology, University of Manitoba,
-where I developed machine learning models and CRISPR-based functional genomics tools to study
-antibiotic resistance mechanisms and accelerate drug discovery in *Burkholderia* and related pathogens.
+<p>As a <strong>Postdoctoral Researcher</strong> in the Department of Animal Science at the University of Manitoba, I lead the bioinformatics side of projects on the livestock microbiome and antimicrobial resistance. That means designing metagenomic workflows for hybrid Illumina and Nanopore data, recovering metagenome-assembled genomes at scale on HPC clusters, quantifying resistomes and mobilomes, and applying machine learning to genome-resolved isolate collections to find signatures of health and disease.</p>
 
-My research bridges wet-lab microbiology and data science, translating high-throughput experimental
-data into computational insights that can inform antimicrobial stewardship and animal health management.
+<p>I completed my <strong>PhD in Microbiology</strong> at the University of Manitoba, where I combined CRISPR interference, pooled-library sequencing and machine learning to study essential genes and antibiotic action in <em>Burkholderia cenocepacia</em>. That work produced a broad-host-range CRISPRi toolkit, a graph neural network that raised the hit rate of an antibacterial screen, and a CRISPRi-seq chemical-genomics platform that uncovered a new inhibitor of peptidyl-tRNA hydrolase.</p>
 
-<!-- Add more about yourself here — your background, goals, what drives you, etc. -->
+<p>I release the code behind my research as reusable tools and interactive apps so that collaborators can reproduce and extend the analyses. You can find them on the <a href="/projects">Projects</a> page and on <a href="https://github.com/zisanurrahman" target="_blank" rel="noopener">GitHub</a>.</p>
 
 <div class="pill-group">
-  <span class="pill">Animal Microbiome</span>
   <span class="pill">Metagenomics</span>
   <span class="pill">Machine Learning</span>
-  <span class="pill">Drug Discovery</span>
+  <span class="pill">CRISPRi-seq</span>
+  <span class="pill">Chemical Genomics</span>
   <span class="pill">Antimicrobial Resistance</span>
-  <span class="pill">CRISPR</span>
-  <span class="pill">Functional Genomics</span>
-  <span class="pill">Computational Biology</span>
+  <span class="pill">Antibiotic Discovery</span>
+  <span class="pill">HPC Workflows</span>
+  <span class="pill">Python &amp; R</span>
 </div>
 
-### Education
+<h3>Education</h3>
 
 <div class="timeline">
   <div class="timeline-item">
@@ -82,7 +75,7 @@ data into computational insights that can inform antimicrobial stewardship and a
   </div> -->
 </div>
 
-### Current Position
+<h3>Positions</h3>
 
 <div class="timeline">
   <div class="timeline-item">
@@ -90,9 +83,14 @@ data into computational insights that can inform antimicrobial stewardship and a
     <div class="timeline-degree">Postdoctoral Researcher</div>
     <div class="timeline-inst">Department of Animal Science, University of Manitoba, Winnipeg, Canada</div>
   </div>
+  <div class="timeline-item">
+    <div class="timeline-year">PhD</div>
+    <div class="timeline-degree">Graduate Researcher, Cardona Lab</div>
+    <div class="timeline-inst">Department of Microbiology, University of Manitoba, Winnipeg, Canada</div>
+  </div>
 </div>
 
-### Awards & Recognition
+<h3>Awards &amp; Recognition</h3>
 
 <div class="timeline">
   <!-- Add awards from your CV — copy the block below and fill in -->
