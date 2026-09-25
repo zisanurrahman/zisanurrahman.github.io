@@ -19,17 +19,12 @@ slug: contact
     <h2 class="section-title">Find Me Online</h2>
     <div class="section-bar"></div>
 
-    <!--
-    Fill in your href="" values below.
-    Leave the href empty or remove the card if you don't use that platform.
-    -->
     <div class="contact-grid">
 
-      <a class="contact-card" href="mailto:">
-        <!-- Replace href with: mailto:your@umanitoba.ca -->
+      <a class="contact-card" href="mailto:a.rahman@umanitoba.ca">
         <span class="contact-icon">&#9993;</span>
         <span class="contact-label">Email</span>
-        <span class="contact-val">your@umanitoba.ca</span>
+        <span class="contact-val">a.rahman@umanitoba.ca</span>
       </a>
 
       <a class="contact-card" href="https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en" target="_blank">

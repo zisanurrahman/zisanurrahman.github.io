@@ -155,7 +155,8 @@ slug: index
         <span class="recent-pub-year">2026</span>
         <div>
           <div class="recent-pub-title"><a href="https://github.com/zisanurrahman/PiGICo-main_submission" target="_blank" rel="noopener">Genome-resolved profiling of an expanded swine gut isolate collection reveals functional signatures of health and disease</a></div>
-          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, F Mohammadian Loojaly, A Farzan, MG Surette, S Walkowiak, C Yang, H Derakhshani &mdash; <em>Microbiome</em> &middot; accepted, in press &middot; first author</div>
+          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, F Mohammadian Loojaly, A Farzan, MG Surette, S Walkowiak, C Yang, H Derakhshani &mdash; <em>Microbiome</em></div>
+          <div class="pub-badges"><span class="badge badge-first">First author</span><span class="badge badge-status">Accepted, in press</span></div>
         </div>
       </div>
 
@@ -163,7 +164,8 @@ slug: index
         <span class="recent-pub-year">2026</span>
         <div>
           <div class="recent-pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42690060/" target="_blank" rel="noopener">Optimizing a culture-enriched hybrid metagenomics pipeline to assess the AMR footprint of livestock manure in anaerobic digestate</a></div>
-          <div class="recent-pub-meta">N Rahman<span class="cofirst" title="Co-first author">&dagger;</span>, <strong>ASMZ Rahman</strong><span class="cofirst" title="Co-first author">&dagger;</span>, DB Levin, TA McAllister, N Cicek, H Derakhshani &mdash; <em>Microbiology Spectrum</em> &middot; <span class="cofirst">&dagger;</span>co-first author</div>
+          <div class="recent-pub-meta">N Rahman, <strong>ASMZ Rahman</strong>, DB Levin, TA McAllister, N Cicek, H Derakhshani &mdash; <em>Microbiology Spectrum</em></div>
+          <div class="pub-badges"><span class="badge badge-cofirst">Co-first author</span></div>
         </div>
       </div>
 
@@ -171,7 +173,8 @@ slug: index
         <span class="recent-pub-year">2024</span>
         <div>
           <div class="recent-pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/39541213/" target="_blank" rel="noopener">Rationally designed pooled CRISPRi-seq uncovers an inhibitor of bacterial peptidyl-tRNA hydrolase</a></div>
-          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong> et al. &mdash; <em>Cell Reports</em> 43(11) &middot; first author</div>
+          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong> et al. &mdash; <em>Cell Reports</em> 43(11)</div>
+          <div class="pub-badges"><span class="badge badge-first">First author</span><span class="badge badge-cell">Cell Reports</span></div>
         </div>
       </div>
 
@@ -180,6 +183,7 @@ slug: index
         <div>
           <div class="recent-pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/37558695/" target="_blank" rel="noopener">Profiling cell envelope-antibiotic interactions reveals vulnerabilities to &beta;-lactams in a multidrug-resistant bacterium</a></div>
           <div class="recent-pub-meta">AM Hogan, <strong>ASMZ Rahman</strong>, A Motnenko et al. &mdash; <em>Nature Communications</em> 14(1)</div>
+          <div class="pub-badges"><span class="badge badge-nc">Nature Comms</span></div>
         </div>
       </div>
 
@@ -187,7 +191,8 @@ slug: index
         <span class="recent-pub-year">2022</span>
         <div>
           <div class="recent-pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/36228001/" target="_blank" rel="noopener">A machine learning model trained on a high-throughput antibacterial screen increases the hit rate of drug discovery</a></div>
-          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, C Liu, H Sturm, AM Hogan et al. &mdash; <em>PLOS Computational Biology</em> 18(10) &middot; first author</div>
+          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, C Liu, H Sturm, AM Hogan et al. &mdash; <em>PLOS Computational Biology</em> 18(10)</div>
+          <div class="pub-badges"><span class="badge badge-first">First author</span><span class="badge badge-plos">PLOS Comp Bio</span></div>
         </div>
       </div>
 

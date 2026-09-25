@@ -193,8 +193,11 @@ function buildCard(p) {
   } else {
     badgesHTML += `<a class="badge badge-pmid" href="https://pubmed.ncbi.nlm.nih.gov/${p.uid}/" target="_blank">PMID: ${p.uid}</a>`;
   }
+  const firstAuthor = (p.authors && p.authors[0] && p.authors[0].name) || '';
   if (CO_FIRST_PMIDS.has(String(p.uid))) {
-    badgesHTML += `<span class="badge badge-cofirst" title="Co-first author">Co-first author</span>`;
+    badgesHTML += `<span class="badge badge-cofirst">Co-first author</span>`;
+  } else if (/^rahman\s+asmz/i.test(firstAuthor)) {
+    badgesHTML += `<span class="badge badge-first">First author</span>`;
   }
   if (p.doi) {
     badgesHTML += `<a class="badge badge-doi" href="https://doi.org/${p.doi}" target="_blank">DOI</a>`;
