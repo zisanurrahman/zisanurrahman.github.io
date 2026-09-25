@@ -1,5 +1,5 @@
 # Portfolio Site — Project Notes
-> Last updated: 2026-06-05
+> Last updated: 2026-09-25
 
 ---
 
@@ -68,14 +68,10 @@ needs touching.
 - [ ] **News / Updates section** — a short "recent news" strip on the home page (new grants, papers, talks)
 - [ ] **Projects page** — a dedicated page for software/bioinformatics tools you've built (optional)
 
-### Deployment
-- [ ] **Push to GitHub Pages**:
-  1. Create a new GitHub repo (e.g. `zisanurrahman.github.io` or any name)
-  2. Push the contents of `portfolio-site/` to the repo
-  3. In repo Settings → Pages → set source to `main` branch, root `/`
-  4. GitHub will build the Jekyll site automatically — no local install needed
-  5. Site will be live at `https://zisanurrahman.github.io`
-- [ ] Once deployed, verify PubMed fetch works (requires internet, which GitHub Pages serves over)
+### Deployment ✅ (done 2026-09-25)
+- [x] Live at **https://zisanurrahman.github.io** — repo `zisanurrahman/zisanurrahman.github.io`, Pages builds from `main` (root)
+- [x] PubMed fetch verified live; script now merges ORCID + author-name searches (ORCID alone only tagged 1 paper)
+- To publish changes: edit files, then `git add -A && git commit -m "..." && git push` — GitHub rebuilds in ~1 min
 - [ ] Clean up old draft folders: `portfolio/` and `zisan-portfolio/` in `Documents/GitHub/`
 
 ### Optional polish
