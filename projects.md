@@ -146,5 +146,44 @@ description: Open-source bioinformatics pipelines, machine-learning models and i
       </div>
     </div>
 
+    <!-- ── Group 4: In development ───────────────────────────────────── -->
+    <div class="project-group">
+      <h2 class="project-group-title">In Development</h2>
+      <p class="project-group-desc">Active pipelines from my current collaborations. Code is in private repositories until the associated manuscripts are submitted.</p>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-head">
+            <div class="project-name">Anti-methanogen virtual screening pipeline</div>
+            <span class="project-lang lang-python">Python · SLURM</span>
+          </div>
+          <p class="project-desc">HPC-scale docking of a <strong>791,883-compound natural-product library</strong> (COCONUT, ZINC15, Super Natural 3, UNPD) against 20 archaea-specific <em>Methanobrevibacter smithii</em> targets prioritised from genome-scale metabolic models, with automated ligand and receptor preparation, SLURM array orchestration, and OpenMM molecular-dynamics refinement of top hits.</p>
+          <div class="project-tags"><span>AutoDock Vina</span><span>RDKit / Meeko</span><span>OpenMM</span><span>GEM-guided targets</span><span>NSERC Alliance</span></div>
+          <div class="project-links"><span class="status-chip dev">Private · manuscript in preparation</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-head">
+            <div class="project-name">Rumen pan-methanogenome metabolic models</div>
+            <span class="project-lang lang-python">Python · COBRApy</span>
+          </div>
+          <p class="project-desc">Curated genome-scale metabolic models for <em>M. smithii</em> and nine further rumen methanogens, merged from CarveMe, ModelSEED and RAVEN drafts, harmonised to the BiGG namespace, gap-filled, GPR-annotated and quality-scored with memote. Used to define essential, archaea-specific reactions for methane mitigation.</p>
+          <div class="project-tags"><span>Flux balance analysis</span><span>memote</span><span>KEGG / BlastKOALA</span><span>Gap-filling</span></div>
+          <div class="project-links"><span class="status-chip dev">Private · in development</span></div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-head">
+            <div class="project-name">Feed-efficiency functional ML framework</div>
+            <span class="project-lang lang-mixed">Snakemake · Python · R</span>
+          </div>
+          <p class="project-desc">End-to-end workflow for the Topigs Norsvin collaboration: metagenome assembly and DAS Tool binning, functional profiling against an in-house isolate and MAG reference, CAZyme and metabolic-gene-cluster feature matrices, and interpretable classifiers (random forest, gradient boosting, FT-Transformer, TabNet) with SHAP explanations and leave-one-farm-out validation.</p>
+          <div class="project-tags"><span>Snakemake</span><span>dbCAN</span><span>gutSMASH</span><span>SHAP</span><span>Topigs Norsvin</span></div>
+          <div class="project-links"><span class="status-chip dev">Private · in development</span></div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>

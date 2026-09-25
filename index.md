@@ -16,13 +16,17 @@ slug: index
           I build analysis pipelines and machine-learning models that turn sequencing and
           high-throughput screening data into biological insight: from metagenome-assembled genomes
           and resistome profiling in livestock systems to CRISPRi-seq chemical genomics and
-          data-driven antibiotic discovery.
+          data-driven antibiotic discovery. Currently a Research Manitoba Postdoctoral Fellow working
+          with <strong>Topigs Norsvin</strong> on machine learning for feed efficiency and, through an
+          <strong>NSERC Alliance</strong> project with Prof. Le Luo Guan (UBC), on machine learning and
+          metabolic modelling to reduce enteric methane.
         </p>
         <div class="hero-domains">
           <span>Metagenomics</span>
           <span>Machine Learning</span>
           <span>CRISPRi-seq</span>
           <span>Antimicrobial Resistance</span>
+          <span>Metabolic Modelling</span>
           <span>HPC Workflows</span>
         </div>
         <div class="hero-stats">
@@ -100,8 +104,57 @@ slug: index
   </div>
 </section>
 
-<!-- ─── Featured projects ──────────────────────────────────────────── -->
+<!-- ─── Current projects ───────────────────────────────────────────── -->
 <section class="section section--alt">
+  <div class="container">
+    <p class="section-label">Ongoing Research</p>
+    <h2 class="section-title">Current Projects</h2>
+    <div class="section-bar"></div>
+    <p class="section-desc">Two funded collaborations anchor my postdoctoral work: an industry partnership on feed efficiency and an NSERC Alliance project on enteric methane. Both apply machine learning to genome-resolved livestock microbiome data.</p>
+    <div class="current-grid">
+
+      <div class="current-card">
+        <div class="current-partner">Industry partner <span class="chip">Topigs Norsvin</span></div>
+        <h3>AI-driven discovery of microbial functional signatures for feed efficiency in pigs</h3>
+        <p>Host genetics explains only about a fifth of the variation in feed efficiency. We are building a <strong>functional reference database</strong> of the swine gut microbiome from more than 400 cultured isolates and 3,700 metagenome-assembled genomes, then training interpretable machine-learning models on functional gene profiles from Topigs Norsvin lines with divergent feed-efficiency phenotypes.</p>
+        <ul>
+          <li>Metagenomic sampling of high- and low-feed-efficiency animals</li>
+          <li>Classical ML baselines plus tabular deep learning (FT-Transformer, TabNet)</li>
+          <li>SHAP and attention-based interpretation; leave-one-farm-out and cross-cohort validation</li>
+        </ul>
+        <div class="tools">Snakemake · scikit-learn · XGBoost · PyTorch · SHAP · Optuna · Narval / Grex HPC</div>
+      </div>
+
+      <div class="current-card">
+        <div class="current-partner">NSERC Alliance <span class="chip">with Prof. Le Luo Guan, UBC</span></div>
+        <h3>Machine learning and metabolic modelling to reduce enteric methane from cattle</h3>
+        <p>Enteric methane from ruminants is a major agricultural greenhouse-gas source, and <em>Methanobrevibacter</em> methanogens produce most of it. I lead the computational side of a collaboration with the Guan lab at the University of British Columbia that links <strong>rumen microbiome data and machine learning to methane phenotypes</strong> and models methanogen metabolism to find intervention points.</p>
+        <ul>
+          <li>Genome-scale metabolic models for a ten-species rumen pan-methanogenome</li>
+          <li>Essential archaea-specific reactions prioritised as inhibitor targets</li>
+          <li>Nanopore rumen metagenomes and methanogen–bacteria co-culture assays</li>
+        </ul>
+        <div class="tools">COBRApy · CarveMe · ModelSEED · RAVEN · memote · Nanopore · R</div>
+      </div>
+
+      <div class="current-card">
+        <div class="current-partner">Computational drug discovery <span class="chip">Anti-methanogen pipeline</span></div>
+        <h3>Virtual screening of natural products against archaea-specific methanogen enzymes</h3>
+        <p>Building on the metabolic models, I developed an open, HPC-scale pipeline that docks a non-redundant library of <strong>~792,000 natural products</strong> against 20 archaea-specific targets across methanogenesis and coenzyme F420, F430, CoM and H<sub>4</sub>MPT biosynthesis, with molecular-dynamics follow-up of top hits and selectivity screened against the bovine proteome.</p>
+        <ul>
+          <li>14 million docking runs orchestrated as SLURM array jobs</li>
+          <li>Automated ligand and receptor preparation with RDKit, Meeko and PDBFixer</li>
+          <li>F420-autofluorescence assay for validating anti-methanogenic hits</li>
+        </ul>
+        <div class="tools">AutoDock Vina · RDKit · OpenMM · AlphaFold structures · SLURM</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─── Featured projects ──────────────────────────────────────────── -->
+<section class="section">
   <div class="container">
     <p class="section-label">Software &amp; Pipelines</p>
     <h2 class="section-title">Featured Projects</h2>
@@ -144,7 +197,7 @@ slug: index
 </section>
 
 <!-- ─── Recent Publications ───────────────────────────────────────── -->
-<section class="section">
+<section class="section section--alt">
   <div class="container">
     <p class="section-label">Latest Work</p>
     <h2 class="section-title">Selected Publications</h2>

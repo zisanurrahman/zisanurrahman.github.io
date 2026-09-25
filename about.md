@@ -9,7 +9,7 @@ description: About A S M Zisanur Rahman, computational biologist and bioinformat
   <div class="container">
     <p class="page-hero-tag">About</p>
     <h1>A S M Zisanur Rahman</h1>
-    <p>Computational Biologist &amp; Bioinformatician &mdash; Postdoctoral Researcher, Department of Animal Science, University of Manitoba</p>
+    <p>Computational Biologist &amp; Bioinformatician &mdash; Research Manitoba Postdoctoral Fellow, Department of Animal Science, University of Manitoba</p>
   </div>
 </div>
 
@@ -37,7 +37,9 @@ description: About A S M Zisanur Rahman, computational biologist and bioinformat
 
 <p class="lead">I am a computational biologist who builds the pipelines and models that turn sequencing and screening data into answers about microbes, antibiotics and resistance.</p>
 
-<p>As a <strong>Postdoctoral Researcher</strong> in the Department of Animal Science at the University of Manitoba, I lead the bioinformatics side of projects on the livestock microbiome and antimicrobial resistance. That means designing metagenomic workflows for hybrid Illumina and Nanopore data, recovering metagenome-assembled genomes at scale on HPC clusters, quantifying resistomes and mobilomes, and applying machine learning to genome-resolved isolate collections to find signatures of health and disease.</p>
+<p>As a <strong>Research Manitoba Postdoctoral Fellow</strong> in the Translational Livestock Microbiome Research Lab (Department of Animal Science, University of Manitoba), I lead the bioinformatics side of projects on the livestock microbiome, feed efficiency, methane and antimicrobial resistance. That means designing metagenomic workflows for hybrid Illumina and Nanopore data, recovering metagenome-assembled genomes at scale on HPC clusters, quantifying resistomes and mobilomes, and applying machine learning to genome-resolved isolate collections to find signatures of health and disease.</p>
+
+<p>Two collaborations anchor this work. With the pig-breeding company <strong>Topigs Norsvin</strong> I am building interpretable machine-learning models that predict feed efficiency from the functional gene content of the swine gut microbiome. Through an <strong>NSERC Alliance</strong> project with Prof. Le Luo Guan at the University of British Columbia, I apply machine learning and genome-scale metabolic modelling to rumen methanogens to find ways to reduce enteric methane emissions from cattle. Details are on the <a href="/research">Research</a> page.</p>
 
 <p>I completed my <strong>PhD in Microbiology</strong> at the University of Manitoba, where I combined CRISPR interference, pooled-library sequencing and machine learning to study essential genes and antibiotic action in <em>Burkholderia cenocepacia</em>. That work produced a broad-host-range CRISPRi toolkit, a graph neural network that raised the hit rate of an antibacterial screen, and a CRISPRi-seq chemical-genomics platform that uncovered a new inhibitor of peptidyl-tRNA hydrolase.</p>
 
@@ -50,6 +52,9 @@ description: About A S M Zisanur Rahman, computational biologist and bioinformat
   <span class="pill">Chemical Genomics</span>
   <span class="pill">Antimicrobial Resistance</span>
   <span class="pill">Antibiotic Discovery</span>
+  <span class="pill">Metabolic Modelling</span>
+  <span class="pill">Feed Efficiency</span>
+  <span class="pill">Enteric Methane</span>
   <span class="pill">HPC Workflows</span>
   <span class="pill">Python &amp; R</span>
 </div>
@@ -80,8 +85,8 @@ description: About A S M Zisanur Rahman, computational biologist and bioinformat
 <div class="timeline">
   <div class="timeline-item">
     <div class="timeline-year">Present</div>
-    <div class="timeline-degree">Postdoctoral Researcher</div>
-    <div class="timeline-inst">Department of Animal Science, University of Manitoba, Winnipeg, Canada</div>
+    <div class="timeline-degree">Research Manitoba Postdoctoral Fellow</div>
+    <div class="timeline-inst">Translational Livestock Microbiome Research Lab, Department of Animal Science, University of Manitoba, Winnipeg, Canada</div>
   </div>
   <div class="timeline-item">
     <div class="timeline-year">PhD</div>

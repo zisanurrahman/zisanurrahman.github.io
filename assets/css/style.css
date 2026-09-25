@@ -142,6 +142,22 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .project-links a.live  { color: var(--green); }
 .project-links svg { width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
+/* ─── CURRENT PROJECTS ──────────────────────────────────────────────── */
+.current-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.current-card { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius); padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 10px; transition: box-shadow var(--trans); }
+.current-card:hover { box-shadow: var(--shadow); }
+.current-partner { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent2); }
+.current-partner .chip { font-family: var(--sans); text-transform: none; letter-spacing: 0; font-size: 0.7rem; font-weight: 600; color: var(--gold); background: var(--gold-soft); border-radius: 4px; padding: 2px 8px; }
+.current-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy); line-height: 1.3; }
+.current-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+.current-card p strong { color: var(--text); }
+.current-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 5px; margin-top: 2px; }
+.current-card li { font-size: 0.85rem; color: var(--muted); padding-left: 16px; position: relative; }
+.current-card li::before { content: '▹'; position: absolute; left: 0; color: var(--accent); }
+.current-card .tools { font-family: var(--mono); font-size: 0.7rem; color: var(--muted2); border-top: 1px solid var(--border); padding-top: 10px; margin-top: auto; }
+.status-chip { display: inline-block; font-size: 0.7rem; font-weight: 600; color: var(--green); background: var(--green-soft); border-radius: 4px; padding: 2px 8px; }
+.status-chip.dev { color: var(--violet); background: var(--violet-soft); }
+
 /* ─── ABOUT ─────────────────────────────────────────────────────────── */
 .about-layout { display: grid; grid-template-columns: 240px 1fr; gap: 56px; align-items: start; }
 .about-sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: calc(var(--nav-h) + 24px); }
