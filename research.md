@@ -19,7 +19,7 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
     <p class="section-label">Ongoing</p>
     <h2 class="section-title">Current Projects &amp; Collaborations</h2>
     <div class="section-bar"></div>
-    <p class="section-desc">As a Research Manitoba Postdoctoral Fellow in the Translational Livestock Microbiome Research Lab (Derakhshani lab, University of Manitoba), I lead the computational work on two funded collaborations.</p>
+    <p class="section-desc">As a Research Manitoba Postdoctoral Fellow in the <a href="https://tlmicrobiomelab.github.io/" target="_blank" rel="noopener">Translational Livestock Microbiome Research Lab</a> (Derakhshani lab, University of Manitoba), I lead the computational work on two funded collaborations.</p>
     <div class="current-grid">
 
       <div class="current-card">
@@ -66,12 +66,13 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
         <h3>Metagenomics of Livestock Systems</h3>
         <p>Genome-resolved and culture-enriched metagenomics of gut, manure and digestate communities to track how antimicrobial resistance genes and mobile elements move through agricultural systems.</p>
         <ul>
+          <li>Culture-enriched metagenomics of the bovine rumen: novel genome catalogue and host-linked virome</li>
           <li>Hybrid Illumina + Nanopore assembly and MAG recovery</li>
           <li>Resistome and mobilome quantification (RGI, AMRFinder, mobileOG)</li>
           <li>Genome-resolved profiling of swine gut isolate collections</li>
           <li>Ensemble binning pipelines for HPC (MAGnet)</li>
         </ul>
-        <div class="card-foot">Papers: <em>Microbiome</em> 2026 (accepted), <em>Microbiol Spectr</em> 2026 &middot; Code: <a href="/projects">MAGnet, CEMG pipeline, SGI analysis</a></div>
+        <div class="card-foot">Papers: <em>Microbiome</em> 2026 (accepted), <em>Animal Microbiome</em> (submitted), <em>Microbiol Spectr</em> 2026 &middot; Code: <a href="/projects">MAGnet, CEMG pipeline, SGI analysis</a></div>
       </div>
 
       <div class="research-card">

@@ -17,6 +17,20 @@ const CO_FIRST_PMIDS = new Set(['42690060']);
 // it appears in PubMed (it will be picked up automatically).
 const MANUAL_PUBS = [
   {
+    uid: 'manual-animal-microbiome-2026',
+    title: 'Culture-enriched metagenomics recovers novel, high-quality genome catalogue and a host-linked virome of the cultivable bovine rumen microbiome',
+    authors: [
+      { name: 'Rahman ASMZ' }, { name: 'Scott L' }, { name: 'Alizadeh A' }, { name: 'Gruninger RJ' },
+      { name: 'McAllister TA' }, { name: 'Guan LL' }, { name: 'Derakhshani H' },
+    ],
+    source: 'Animal Microbiome',
+    pubdate: '2026',
+    year: 2026,
+    status: 'Submitted',
+    doi: '',
+    link: '',
+  },
+  {
     uid: 'manual-microbiome-2026',
     title: 'Genome-resolved profiling of an expanded swine gut isolate collection reveals functional signatures of health and disease',
     authors: [
@@ -112,7 +126,8 @@ async function loadPubMedPublications() {
     // Prepend accepted / in-press papers that PubMed does not list yet
     const fetchedTitles = new Set(deduped.map(p => norm(p.title)));
     MANUAL_PUBS.filter(m => !fetchedTitles.has(norm(m.title))).forEach(m => deduped.unshift(m));
-    deduped.sort((a, b) => b.year - a.year || (b.status ? 1 : 0) - (a.status ? 1 : 0));
+    const rank = p => p.status === 'Accepted' ? 2 : p.status ? 1 : 0;
+    deduped.sort((a, b) => b.year - a.year || rank(b) - rank(a));
 
     const byYear = {};
     deduped.forEach(p => {
@@ -183,7 +198,9 @@ function buildCard(p) {
     ? p.link
     : p.doi
       ? `https://doi.org/${p.doi}`
-      : `https://pubmed.ncbi.nlm.nih.gov/${p.uid}/`;
+      : p.status
+        ? ''
+        : `https://pubmed.ncbi.nlm.nih.gov/${p.uid}/`;
 
   // Badges
   let badgesHTML = '';
@@ -208,11 +225,11 @@ function buildCard(p) {
 
   card.innerHTML = `
     <div class="pub-title">
-      <a href="${link}" target="_blank" rel="noopener">${p.title.replace(/\.$/, '')}</a>
+      ${link ? `<a href="${link}" target="_blank" rel="noopener">${p.title.replace(/\.$/, '')}</a>` : p.title.replace(/\.$/, '')}
     </div>
     <div class="pub-authors">${authors}</div>
     <div class="pub-journal">
-      <em>${p.source}</em>${loc ? ' ' + loc : ''}${p.status ? ' &middot; ' + p.status.toLowerCase() + ', in press' : ''}
+      <em>${p.source}</em>${loc ? ' ' + loc : ''}${p.status ? ' &middot; ' + (p.status === 'Accepted' ? 'accepted, in press' : p.status.toLowerCase()) : ''}
     </div>
     <div class="pub-badges">${badgesHTML}</div>
   `;

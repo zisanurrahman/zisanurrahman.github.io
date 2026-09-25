@@ -209,6 +209,15 @@ slug: index
       <div class="recent-pub">
         <span class="recent-pub-year">2026</span>
         <div>
+          <div class="recent-pub-title">Culture-enriched metagenomics recovers novel, high-quality genome catalogue and a host-linked virome of the cultivable bovine rumen microbiome</div>
+          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, L Scott, A Alizadeh, RJ Gruninger, TA McAllister, LL Guan, H Derakhshani &mdash; <em>Animal Microbiome</em></div>
+          <div class="pub-badges"><span class="badge badge-first">First author</span><span class="badge badge-status">Submitted</span></div>
+        </div>
+      </div>
+
+      <div class="recent-pub">
+        <span class="recent-pub-year">2026</span>
+        <div>
           <div class="recent-pub-title"><a href="https://github.com/zisanurrahman/PiGICo-main_submission" target="_blank" rel="noopener">Genome-resolved profiling of an expanded swine gut isolate collection reveals functional signatures of health and disease</a></div>
           <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, F Mohammadian Loojaly, A Farzan, MG Surette, S Walkowiak, C Yang, H Derakhshani &mdash; <em>Microbiome</em></div>
           <div class="pub-badges"><span class="badge badge-first">First author</span><span class="badge badge-status">Accepted, in press</span></div>
