@@ -39,16 +39,18 @@ async function loadPubMedPublications() {
       pmids = data.esearchresult?.idlist ?? [];
     } catch (_) {}
 
-    // Fallback: search by author name if ORCID returns nothing
-    if (pmids.length === 0) {
-      const fallbackURL =
+    // Also search by author name: PubMed only tags a few records with an
+    // ORCID, so merge both result sets (deduplicated) for full coverage.
+    try {
+      const nameURL =
         `${EUTILS}esearch.fcgi?db=pubmed` +
         `&term=${encodeURIComponent('"' + PUBMED_AUTHOR + '"[Author]')}` +
         `&retmax=100&retmode=json`;
-      const res  = await fetch(fallbackURL);
+      const res  = await fetch(nameURL);
       const data = await res.json();
-      pmids = data.esearchresult?.idlist ?? [];
-    }
+      const byName = data.esearchresult?.idlist ?? [];
+      pmids = [...new Set([...pmids, ...byName])];
+    } catch (_) {}
 
     if (pmids.length === 0) {
       status.textContent = 'No publications found. Check ORCID or author name.';
