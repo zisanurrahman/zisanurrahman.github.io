@@ -19,14 +19,15 @@ slug: index
           data-driven antibiotic discovery. Currently a Research Manitoba Postdoctoral Fellow working
           with <strong>Topigs Norsvin</strong> on machine learning for feed efficiency and, through an
           <strong>NSERC Alliance</strong> project with Prof. Le Luo Guan (UBC), on machine learning and
-          metabolic modelling to reduce enteric methane.
+          genome-scale metabolic models (GEMs) of individual rumen methanogens and the rumen community
+          to reduce enteric methane.
         </p>
         <div class="hero-domains">
           <span>Metagenomics</span>
           <span>Machine Learning</span>
           <span>CRISPRi-seq</span>
           <span>Antimicrobial Resistance</span>
-          <span>Metabolic Modelling</span>
+          <span>Genome-Scale Metabolic Models</span>
           <span>HPC Workflows</span>
         </div>
         <div class="hero-stats">
@@ -127,10 +128,11 @@ slug: index
 
       <div class="current-card">
         <div class="current-partner">NSERC Alliance <span class="chip">with Prof. Le Luo Guan, UBC</span></div>
-        <h3>Machine learning and metabolic modelling to reduce enteric methane from cattle</h3>
-        <p>Enteric methane from ruminants is a major agricultural greenhouse-gas source, and <em>Methanobrevibacter</em> methanogens produce most of it. I lead the computational side of a collaboration with the Guan lab at the University of British Columbia that links <strong>rumen microbiome data and machine learning to methane phenotypes</strong> and models methanogen metabolism to find intervention points.</p>
+        <h3>Machine learning and genome-scale metabolic models (GEMs) to reduce enteric methane from cattle</h3>
+        <p>Enteric methane from ruminants is a major agricultural greenhouse-gas source, and <em>Methanobrevibacter</em> methanogens produce most of it. I lead the computational side of a collaboration with the Guan lab at the University of British Columbia that links <strong>rumen microbiome data and machine learning to methane phenotypes</strong> and builds genome-scale metabolic models (GEMs) at two levels: <strong>individual methanogens</strong>, to pinpoint essential reactions, and the <strong>rumen microbial community</strong>, to simulate hydrogen flow and methane output across species.</p>
         <ul>
-          <li>Genome-scale metabolic models for a ten-species rumen pan-methanogenome</li>
+          <li>Individual GEMs for a ten-species rumen pan-methanogenome</li>
+          <li>Community-level rumen GEMs coupling methanogens with fermenting bacteria</li>
           <li>Essential archaea-specific reactions prioritised as inhibitor targets</li>
           <li>Nanopore rumen metagenomes and methanogen–bacteria co-culture assays</li>
         </ul>
@@ -140,7 +142,7 @@ slug: index
       <div class="current-card">
         <div class="current-partner">Computational drug discovery <span class="chip">Anti-methanogen pipeline</span></div>
         <h3>Virtual screening of natural products against archaea-specific methanogen enzymes</h3>
-        <p>Building on the metabolic models, I developed an open, HPC-scale pipeline that docks a non-redundant library of <strong>~792,000 natural products</strong> against 20 archaea-specific targets across methanogenesis and coenzyme F420, F430, CoM and H<sub>4</sub>MPT biosynthesis, with molecular-dynamics follow-up of top hits and selectivity screened against the bovine proteome.</p>
+        <p>Building on the methanogen GEMs, I developed an open, HPC-scale pipeline that docks a non-redundant library of <strong>~792,000 natural products</strong> against 20 archaea-specific targets across methanogenesis and coenzyme F420, F430, CoM and H<sub>4</sub>MPT biosynthesis, with molecular-dynamics follow-up of top hits and selectivity screened against the bovine proteome.</p>
         <ul>
           <li>14 million docking runs orchestrated as SLURM array jobs</li>
           <li>Automated ligand and receptor preparation with RDKit, Meeko and PDBFixer</li>

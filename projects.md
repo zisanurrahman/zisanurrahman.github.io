@@ -164,11 +164,11 @@ description: Open-source bioinformatics pipelines, machine-learning models and i
 
         <div class="project-card">
           <div class="project-head">
-            <div class="project-name">Rumen pan-methanogenome metabolic models</div>
+            <div class="project-name">Rumen methanogen &amp; community GEMs</div>
             <span class="project-lang lang-python">Python · COBRApy</span>
           </div>
-          <p class="project-desc">Curated genome-scale metabolic models for <em>M. smithii</em> and nine further rumen methanogens, merged from CarveMe, ModelSEED and RAVEN drafts, harmonised to the BiGG namespace, gap-filled, GPR-annotated and quality-scored with memote. Used to define essential, archaea-specific reactions for methane mitigation.</p>
-          <div class="project-tags"><span>Flux balance analysis</span><span>memote</span><span>KEGG / BlastKOALA</span><span>Gap-filling</span></div>
+          <p class="project-desc">Curated genome-scale metabolic models for <em>M. smithii</em> and nine further rumen methanogens, merged from CarveMe, ModelSEED and RAVEN drafts, harmonised to the BiGG namespace, gap-filled, GPR-annotated and quality-scored with memote. Used to define essential, archaea-specific reactions for methane mitigation, and extended to community-level rumen GEMs that couple methanogens with fermenting bacteria.</p>
+          <div class="project-tags"><span>Flux balance analysis</span><span>Community modelling</span><span>memote</span><span>KEGG / BlastKOALA</span><span>Gap-filling</span></div>
           <div class="project-links"><span class="status-chip dev">Private · in development</span></div>
         </div>
 

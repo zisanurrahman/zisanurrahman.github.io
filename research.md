@@ -9,7 +9,7 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
   <div class="container">
     <p class="page-hero-tag">Research</p>
     <h1>Computational Microbiology</h1>
-    <p>I use genomics, metagenomics, machine learning and metabolic modelling to understand microbial communities, antibiotic resistance, feed efficiency and methane production in livestock. Wet-lab training lets me design the experiments that generate the data, and computational training lets me extract the biology from it.</p>
+    <p>I use genomics, metagenomics, machine learning and genome-scale metabolic models (GEMs) to understand microbial communities, antibiotic resistance, feed efficiency and methane production in livestock. Wet-lab training lets me design the experiments that generate the data, and computational training lets me extract the biology from it.</p>
   </div>
 </div>
 
@@ -37,10 +37,11 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
 
       <div class="current-card">
         <div class="current-partner">NSERC Alliance <span class="chip">with Prof. Le Luo Guan, UBC</span></div>
-        <h3>Machine learning and metabolic modelling for enteric methane mitigation</h3>
-        <p>In partnership with the Guan lab at the University of British Columbia, this NSERC Alliance project combines rumen microbiome data, machine learning and mechanistic modelling to predict methane phenotypes and identify ways to suppress rumen methanogens without harming the animal or the beneficial community.</p>
+        <h3>Machine learning and genome-scale metabolic models (GEMs) for enteric methane mitigation</h3>
+        <p>In partnership with the Guan lab at the University of British Columbia, this NSERC Alliance project combines rumen microbiome data, machine learning and genome-scale metabolic models (GEMs) to predict methane phenotypes and identify ways to suppress rumen methanogens without harming the animal or the beneficial community. GEMs are built at two levels: <strong>individual methanogens</strong>, to define essential archaea-specific reactions, and the <strong>rumen community</strong>, to simulate cross-feeding, hydrogen transfer and methane output across methanogens and fermenting bacteria.</p>
         <ul>
-          <li>Genome-scale metabolic models of <em>Methanobrevibacter smithii</em> and nine other rumen methanogens, built with CarveMe, ModelSEED and RAVEN and curated with memote</li>
+          <li>Individual GEMs of <em>Methanobrevibacter smithii</em> and nine other rumen methanogens, built with CarveMe, ModelSEED and RAVEN and curated with memote</li>
+          <li>Community-level rumen GEMs integrating methanogens with fermenting bacteria to model hydrogen flow and methane yield</li>
           <li>Flux balance analysis under rumen-like conditions to define essential, archaea-specific reactions</li>
           <li>Virtual screening of ~792,000 natural products against 20 methanogen targets, with MD refinement and bovine-proteome selectivity filtering</li>
           <li>Nanopore rumen metagenomes and F420-based methanogen–bacteria co-culture assays for validation</li>
@@ -75,10 +76,11 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
 
       <div class="research-card">
         <div class="research-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><line x1="6.5" y1="7.5" x2="10" y2="10.5"/><line x1="17.5" y1="7.5" x2="14" y2="10.5"/><line x1="6.5" y1="16.5" x2="10" y2="13.5"/><line x1="17.5" y1="16.5" x2="14" y2="13.5"/></svg></div>
-        <h3>Rumen Methanogens &amp; Metabolic Modelling</h3>
-        <p>Genome-scale metabolic reconstruction and constraint-based modelling of rumen methanogens to map methanogenesis and cofactor biosynthesis, prioritise essential archaea-specific enzymes, and feed structure-based discovery of anti-methanogenic compounds.</p>
+        <h3>Rumen Methanogens &amp; Genome-Scale Metabolic Models</h3>
+        <p>Genome-scale metabolic models (GEMs) of rumen methanogens at the individual level, to map methanogenesis and cofactor biosynthesis and prioritise essential archaea-specific enzymes, and at the rumen community level, to simulate how methanogens and fermenting bacteria exchange hydrogen and shape methane output. Both feed structure-based discovery of anti-methanogenic compounds.</p>
         <ul>
-          <li>Ten-species pan-methanogenome of curated GEMs</li>
+          <li>Ten-species pan-methanogenome of curated individual GEMs</li>
+          <li>Community GEMs of the rumen ecosystem</li>
           <li>Flux balance and essentiality analysis under rumen conditions</li>
           <li>Natural-product virtual screening at HPC scale</li>
           <li>Methanogen–bacteria mini-community experiments</li>
@@ -147,7 +149,7 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
           <li><strong>Amplicon:</strong> QIIME 2, phyloseq, vegan</li>
           <li><strong>Long reads:</strong> Nanopore assembly and hybrid polishing</li>
           <li><strong>Differential analysis:</strong> DESeq2, GSEA</li>
-          <li><strong>Metabolic modelling:</strong> COBRApy, CarveMe, ModelSEED, RAVEN, memote, FBA</li>
+          <li><strong>Genome-scale metabolic models:</strong> COBRApy, CarveMe, ModelSEED, RAVEN, memote, FBA, community modelling</li>
         </ul>
       </div>
 
