@@ -1,0 +1,41 @@
+title: "A S M Zisanur Rahman"
+description: "Postdoctoral Researcher | Computational Biologist | University of Manitoba"
+baseurl: ""
+url: "https://zisanurrahman.github.io"
+
+author:
+  name: "A S M Zisanur Rahman"
+  title: "Postdoctoral Researcher"
+  department: "Department of Animal Science"
+  institution: "University of Manitoba"
+  location: "Winnipeg, Manitoba, Canada"
+  email: ""                     # ← fill in your email
+  scholar: "https://scholar.google.ca/citations?user=k9kXykwAAAAJ&hl=en"
+  linkedin: "https://www.linkedin.com/in/zisanur-rahman-phd-07a81862/"
+  github: "https://github.com/zisanurrahman"
+  researchgate: "https://www.researchgate.net/profile/Zisanur-Rahman"
+  orcid: "https://orcid.org/0000-0001-7566-1696"
+  orcid_id: "0000-0001-7566-1696"
+  twitter: ""                   # ← optional
+
+metrics:
+  citations: 229
+  citations_since: 197
+  h_index: 9
+  i10_index: 8
+
+collections:
+  publications:
+    output: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - NOTES.md
+  - preview
+  - .Rhistory
