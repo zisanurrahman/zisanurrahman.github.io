@@ -121,7 +121,7 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .project-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 24px 20px; display: flex; flex-direction: column; gap: 10px; transition: border-color var(--trans), box-shadow var(--trans); }
 .project-card:hover { border-color: var(--border2); box-shadow: var(--shadow); }
 .project-card.featured { border-top: 3px solid var(--accent); }
-.project-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.project-head { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
 .project-name { font-size: 1.08rem; font-weight: 700; color: var(--navy); }
 .project-name a { color: var(--navy); }
 .project-name a:hover { color: var(--accent); }
