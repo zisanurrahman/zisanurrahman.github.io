@@ -30,7 +30,6 @@ slug: index
           <span>Genome-Scale Metabolic Models</span>
           <span>HPC Workflows</span>
         </div>
-        </div>
         <div class="hero-cta">
           <a class="btn btn-primary" href="/projects">View Projects</a>
           <a class="btn btn-outline" href="/publications">Publications</a>
