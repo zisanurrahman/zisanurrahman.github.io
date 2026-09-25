@@ -56,6 +56,8 @@ const BADGE_MAP = {
   'j cheminform':           { cls: 'badge-jci',  label: 'J Cheminform' },
   'cell rep':               { cls: 'badge-cell', label: 'Cell Reports' },
   'microbiome':             { cls: 'badge-nc',   label: 'Microbiome' },
+  'animal microbiome':      { cls: 'badge-plos', label: 'Animal Microbiome' },
+  'microbiol spectr':       { cls: 'badge-jci',  label: 'Microbiol Spectrum' },
 };
 
 async function loadPubMedPublications() {
@@ -178,7 +180,10 @@ function buildCard(p) {
 
   // Highlight if it's a high-profile journal
   const srcLower = (p.source || '').toLowerCase();
-  const badge = Object.entries(BADGE_MAP).find(([key]) => srcLower.includes(key));
+  // Longest matching key wins, so 'animal microbiome' beats 'microbiome'
+  const badge = Object.entries(BADGE_MAP)
+    .filter(([key]) => srcLower.includes(key))
+    .sort((a, b) => b[0].length - a[0].length)[0];
   if (badge) card.classList.add('featured');
 
   // Authors — bold "Rahman" entries
