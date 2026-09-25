@@ -39,7 +39,7 @@ description: Open-source bioinformatics pipelines, machine-learning models and i
             <div class="project-name"><a href="https://github.com/zisanurrahman/CEMG_analysis_pipeline" target="_blank" rel="noopener">Culture-Enriched Metagenomics Pipeline</a></div>
             <span class="project-lang lang-mixed">Bash · Python · R</span>
           </div>
-          <p class="project-desc">End-to-end analysis for a <strong>culture-enriched hybrid metagenomics</strong> study of the AMR footprint of livestock manure in anaerobic digestate: read QC, MetaPhlAn profiling, binning, resistance-gene and mobile-element annotation with RGI, AMRFinder, BacMet and mobileOG, read-mapping quantification (CPM), and publication figures.</p>
+          <p class="project-desc">End-to-end analysis for a <strong>culture-enriched hybrid metagenomics</strong> study of the AMR footprint of livestock manure in anaerobic digestate: read QC, MetaPhlAn profiling, binning, resistance-gene and mobile-element annotation with RGI, AMRFinder, BacMet and mobileOG, read-mapping quantification (CPM), and publication figures. Co-first author on the resulting paper.</p>
           <div class="project-tags"><span>Resistome</span><span>Mobilome</span><span>AMR surveillance</span><span>Livestock</span></div>
           <div class="project-links">
             <a href="https://github.com/zisanurrahman/CEMG_analysis_pipeline" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> GitHub</a>
@@ -47,15 +47,16 @@ description: Open-source bioinformatics pipelines, machine-learning models and i
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card featured">
           <div class="project-head">
             <div class="project-name"><a href="https://github.com/zisanurrahman/PiGICo-main_submission" target="_blank" rel="noopener">Swine Gut Isolate Collection Analysis</a></div>
             <span class="project-lang lang-mixed">Python · R · Snakemake</span>
           </div>
-          <p class="project-desc">Scripts for <strong>genome-resolved profiling of an expanded swine gut isolate collection</strong>: genome annotation, feature integration, read mapping, machine-learning classification of health and disease signatures with XGBoost, and network-based guild analysis. Built for modular use on the Grex HPC cluster.</p>
+          <p class="project-desc">Scripts for <strong>genome-resolved profiling of an expanded swine gut isolate collection</strong>: genome annotation, feature integration, read mapping, machine-learning classification of health and disease signatures with XGBoost, and network-based guild analysis. Built for modular use on the Grex HPC cluster. Companion to my first-author paper accepted at <em>Microbiome</em>.</p>
           <div class="project-tags"><span>Isolate genomics</span><span>XGBoost</span><span>Network analysis</span><span>Swine microbiome</span></div>
           <div class="project-links">
             <a href="https://github.com/zisanurrahman/PiGICo-main_submission" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> GitHub</a>
+            <a class="paper" href="/publications"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Microbiome 2026 (accepted)</a>
           </div>
         </div>
 

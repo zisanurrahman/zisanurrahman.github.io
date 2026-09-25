@@ -31,7 +31,7 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
           <li>Genome-resolved profiling of swine gut isolate collections</li>
           <li>Ensemble binning pipelines for HPC (MAGnet)</li>
         </ul>
-        <div class="card-foot">Code: <a href="/projects">MAGnet, CEMG pipeline, SGI analysis</a></div>
+        <div class="card-foot">Papers: <em>Microbiome</em> 2026 (accepted), <em>Microbiol Spectr</em> 2026 &middot; Code: <a href="/projects">MAGnet, CEMG pipeline, SGI analysis</a></div>
       </div>
 
       <div class="research-card">

@@ -220,6 +220,9 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .badge-pmid:hover { color: var(--accent); border-color: var(--accent); }
 .badge-doi  { background: var(--accent-soft); color: var(--accent2); text-decoration: none !important; }
 .badge-doi:hover { color: var(--accent); }
+.badge-status  { background: var(--green-soft); color: var(--green); }
+.badge-cofirst { background: var(--gold-soft); color: var(--gold); }
+.cofirst { color: var(--accent2); font-weight: 600; cursor: help; }
 .pub-loading { color: var(--muted); font-size: 0.9rem; padding: 40px 0; display: flex; align-items: center; gap: 12px; }
 .pub-loading::before { content: ''; width: 18px; height: 18px; border: 2px solid var(--border2); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
 @keyframes spin { to { transform: rotate(360deg); } }

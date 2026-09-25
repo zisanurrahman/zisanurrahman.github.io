@@ -10,6 +10,28 @@ const PUBMED_ORCID  = '0000-0001-7566-1696';
 const PUBMED_AUTHOR = 'Rahman ASMZ'; // fallback search term
 const EUTILS        = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/';
 
+// PMIDs where ASMZ Rahman is co-first author (shown with a badge)
+const CO_FIRST_PMIDS = new Set(['42690060']);
+
+// Accepted / in-press papers not yet indexed in PubMed. Remove an entry once
+// it appears in PubMed (it will be picked up automatically).
+const MANUAL_PUBS = [
+  {
+    uid: 'manual-microbiome-2026',
+    title: 'Genome-resolved profiling of an expanded swine gut isolate collection reveals functional signatures of health and disease',
+    authors: [
+      { name: 'Rahman ASMZ' }, { name: 'Mohammadian Loojaly F' }, { name: 'Farzan A' },
+      { name: 'Surette MG' }, { name: 'Walkowiak S' }, { name: 'Yang C' }, { name: 'Derakhshani H' },
+    ],
+    source: 'Microbiome',
+    pubdate: '2026',
+    year: 2026,
+    status: 'Accepted',
+    doi: '',
+    link: 'https://github.com/zisanurrahman/PiGICo-main_submission',
+  },
+];
+
 // Journals to badge specially
 const BADGE_MAP = {
   'nat commun':             { cls: 'badge-nc',   label: 'Nature Comms' },
@@ -19,6 +41,7 @@ const BADGE_MAP = {
   'acs synth biol':         { cls: 'badge-acs',  label: 'ACS Synth Bio' },
   'j cheminform':           { cls: 'badge-jci',  label: 'J Cheminform' },
   'cell rep':               { cls: 'badge-cell', label: 'Cell Reports' },
+  'microbiome':             { cls: 'badge-nc',   label: 'Microbiome' },
 };
 
 async function loadPubMedPublications() {
@@ -86,6 +109,11 @@ async function loadPubMedPublications() {
     const journalTitles = new Set(papers.filter(p => !isPreprint(p)).map(p => norm(p.title)));
     const deduped = papers.filter(p => !(isPreprint(p) && journalTitles.has(norm(p.title))));
 
+    // Prepend accepted / in-press papers that PubMed does not list yet
+    const fetchedTitles = new Set(deduped.map(p => norm(p.title)));
+    MANUAL_PUBS.filter(m => !fetchedTitles.has(norm(m.title))).forEach(m => deduped.unshift(m));
+    deduped.sort((a, b) => b.year - a.year || (b.status ? 1 : 0) - (a.status ? 1 : 0));
+
     const byYear = {};
     deduped.forEach(p => {
       if (!byYear[p.year]) byYear[p.year] = [];
@@ -151,12 +179,23 @@ function buildCard(p) {
   ].join('');
 
   // Link — prefer DOI, fallback to PMID
-  const link = p.doi
-    ? `https://doi.org/${p.doi}`
-    : `https://pubmed.ncbi.nlm.nih.gov/${p.uid}/`;
+  const link = p.link
+    ? p.link
+    : p.doi
+      ? `https://doi.org/${p.doi}`
+      : `https://pubmed.ncbi.nlm.nih.gov/${p.uid}/`;
 
   // Badges
-  let badgesHTML = `<a class="badge badge-pmid" href="https://pubmed.ncbi.nlm.nih.gov/${p.uid}/" target="_blank">PMID: ${p.uid}</a>`;
+  let badgesHTML = '';
+  if (p.status) {
+    badgesHTML += `<span class="badge badge-status">${p.status}</span>`;
+    card.classList.add('featured');
+  } else {
+    badgesHTML += `<a class="badge badge-pmid" href="https://pubmed.ncbi.nlm.nih.gov/${p.uid}/" target="_blank">PMID: ${p.uid}</a>`;
+  }
+  if (CO_FIRST_PMIDS.has(String(p.uid))) {
+    badgesHTML += `<span class="badge badge-cofirst" title="Co-first author">Co-first author</span>`;
+  }
   if (p.doi) {
     badgesHTML += `<a class="badge badge-doi" href="https://doi.org/${p.doi}" target="_blank">DOI</a>`;
   }
@@ -170,7 +209,7 @@ function buildCard(p) {
     </div>
     <div class="pub-authors">${authors}</div>
     <div class="pub-journal">
-      <em>${p.source}</em>${loc ? ' ' + loc : ''}
+      <em>${p.source}</em>${loc ? ' ' + loc : ''}${p.status ? ' &middot; ' + p.status.toLowerCase() + ', in press' : ''}
     </div>
     <div class="pub-badges">${badgesHTML}</div>
   `;

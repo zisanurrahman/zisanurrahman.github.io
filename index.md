@@ -26,7 +26,7 @@ slug: index
           <span>HPC Workflows</span>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-num">12</span><span class="stat-label">Publications</span></div>
+          <div class="stat"><span class="stat-num">13</span><span class="stat-label">Publications</span></div>
           <div class="stat"><span class="stat-num">229</span><span class="stat-label">Citations</span></div>
           <div class="stat"><span class="stat-num">9</span><span class="stat-label">h-index</span></div>
           <div class="stat"><span class="stat-num">8</span><span class="stat-label">Open-source tools</span></div>
@@ -154,8 +154,16 @@ slug: index
       <div class="recent-pub">
         <span class="recent-pub-year">2026</span>
         <div>
+          <div class="recent-pub-title"><a href="https://github.com/zisanurrahman/PiGICo-main_submission" target="_blank" rel="noopener">Genome-resolved profiling of an expanded swine gut isolate collection reveals functional signatures of health and disease</a></div>
+          <div class="recent-pub-meta"><strong>ASMZ Rahman</strong>, F Mohammadian Loojaly, A Farzan, MG Surette, S Walkowiak, C Yang, H Derakhshani &mdash; <em>Microbiome</em> &middot; accepted, in press &middot; first author</div>
+        </div>
+      </div>
+
+      <div class="recent-pub">
+        <span class="recent-pub-year">2026</span>
+        <div>
           <div class="recent-pub-title"><a href="https://pubmed.ncbi.nlm.nih.gov/42690060/" target="_blank" rel="noopener">Optimizing a culture-enriched hybrid metagenomics pipeline to assess the AMR footprint of livestock manure in anaerobic digestate</a></div>
-          <div class="recent-pub-meta">N Rahman, <strong>ASMZ Rahman</strong>, DB Levin, TA McAllister, N Cicek, H Derakhshani &mdash; <em>Microbiology Spectrum</em></div>
+          <div class="recent-pub-meta">N Rahman<span class="cofirst" title="Co-first author">&dagger;</span>, <strong>ASMZ Rahman</strong><span class="cofirst" title="Co-first author">&dagger;</span>, DB Levin, TA McAllister, N Cicek, H Derakhshani &mdash; <em>Microbiology Spectrum</em> &middot; <span class="cofirst">&dagger;</span>co-first author</div>
         </div>
       </div>
 
