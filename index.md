@@ -16,7 +16,7 @@ slug: index
           I build analysis pipelines and machine-learning models that turn sequencing and
           high-throughput screening data into biological insight: from metagenome-assembled genomes
           and resistome profiling in livestock systems to CRISPRi-seq chemical genomics and
-          data-driven antibiotic discovery. Currently a Research Manitoba Postdoctoral Fellow working
+          data-driven antibiotic discovery. Currently a Mitacs Accelerate Postdoctoral Fellow working
           with <strong>Topigs Norsvin</strong> on machine learning for feed efficiency and, through an
           <strong>NSERC Alliance</strong> project with Prof. Le Luo Guan (UBC), on machine learning and
           genome-scale metabolic models (GEMs) of individual rumen methanogens and the rumen community
@@ -109,7 +109,7 @@ slug: index
     <div class="current-grid">
 
       <div class="current-card">
-        <div class="current-partner">Industry partner <span class="chip">Topigs Norsvin</span></div>
+        <div class="current-partner">Industry partner <span class="chip">Topigs Norsvin</span> <span class="chip">Mitacs Accelerate</span></div>
         <h3>AI-driven discovery of microbial functional signatures for feed efficiency in pigs</h3>
         <p>Host genetics explains only about a fifth of the variation in feed efficiency. We are building a <strong>functional reference database</strong> of the swine gut microbiome from more than 400 cultured isolates and 3,700 metagenome-assembled genomes, then training interpretable machine-learning models on functional gene profiles from Topigs Norsvin lines with divergent feed-efficiency phenotypes.</p>
         <ul>

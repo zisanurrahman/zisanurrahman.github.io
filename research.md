@@ -19,11 +19,11 @@ description: Research in computational microbiology by A S M Zisanur Rahman - me
     <p class="section-label">Ongoing</p>
     <h2 class="section-title">Current Projects &amp; Collaborations</h2>
     <div class="section-bar"></div>
-    <p class="section-desc">As a Research Manitoba Postdoctoral Fellow in the <a href="https://tlmicrobiomelab.github.io/" target="_blank" rel="noopener">Translational Livestock Microbiome Research Lab</a> (Derakhshani lab, University of Manitoba), I lead the computational work on two funded collaborations.</p>
+    <p class="section-desc">As a Mitacs Accelerate Postdoctoral Fellow and Research Manitoba Postdoctoral Fellow in the <a href="https://tlmicrobiomelab.github.io/" target="_blank" rel="noopener">Translational Livestock Microbiome Research Lab</a> (Derakhshani lab, University of Manitoba), I lead the computational work on two funded collaborations.</p>
     <div class="current-grid">
 
       <div class="current-card">
-        <div class="current-partner">Industry partner <span class="chip">Topigs Norsvin</span></div>
+        <div class="current-partner">Industry partner <span class="chip">Topigs Norsvin</span> <span class="chip">Mitacs Accelerate</span></div>
         <h3>Machine learning on the swine gut microbiome to predict feed efficiency</h3>
         <p>Feed is 60 to 70 percent of the cost of pig production, and host genomic selection for feed efficiency has plateaued because the trait is only weakly heritable. The gut microbiome carries much of the remaining variance. With the pig-breeding company Topigs Norsvin we sample animals from lines with divergent feed-efficiency phenotypes and ask which <strong>microbial functions</strong>, rather than which taxa, separate efficient from inefficient pigs.</p>
         <ul>
