@@ -83,11 +83,9 @@ needs touching.
 
 ---
 
-## How to resume work with Claude
+## How to resume work
 
-Say: *"Resume my portfolio site — notes are in `/Users/zisanurrahman/Documents/GitHub/portfolio-site/NOTES.md`"*
-
-Claude will read this file and pick up exactly where we left off.
+Start from this file: `/Users/zisanurrahman/Documents/GitHub/portfolio-site/NOTES.md`. It records what is done, what remains, and where everything lives.
 
 ---
 
