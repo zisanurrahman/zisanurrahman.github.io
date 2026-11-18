@@ -1,19 +1,19 @@
 /* ─── Design tokens ─────────────────────────────────────────────────
-   Light, editorial academic palette: warm off-white paper, deep
-   charcoal text, a single restrained teal accent. Serif display type
+   Light, editorial academic palette: cool off-white paper, charcoal
+   headings and footer, a single mid-blue accent. Serif display type
    for headings, Inter for body, mono only for small technical labels. */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg:        #fafaf8;   --bg2: #f2f3ef;   --surface: #ffffff;
-  --border:    #e3e6e2;   --border2: #cdd3ce;
-  --accent:    #0e6b60;   --accent2: #0a5148;   --accent-soft: #e6f2ef;
-  --navy:      #14213a;
-  --text:      #1c2431;   --muted: #55606d;   --muted2: #8a94a0;
+  --bg:        #f8f9fb;   --bg2: #f0f2f5;   --surface: #ffffff;
+  --border:    #e3e6eb;   --border2: #cbd1d9;
+  --accent:    #1f5fbf;   --accent2: #174a96;   --accent-soft: #e8f0fb;
+  --navy:      #1d2127;
+  --text:      #1f242b;   --muted: #58616d;   --muted2: #8a929d;
   --gold:      #8a5f07;   --gold-soft: #fbf3df;
   --green:     #2e6b32;   --green-soft: #e7f2e7;
   --violet:    #4f4599;   --violet-soft: #ecebf7;
   --nav-h:     68px;  --radius: 8px;  --trans: 0.2s ease;
-  --shadow:    0 8px 28px rgba(20,33,58,0.08);
+  --shadow:    0 8px 28px rgba(29,33,39,0.08);
   --serif:     'Source Serif 4', Georgia, 'Times New Roman', serif;
   --sans:      'Inter', system-ui, -apple-system, sans-serif;
   --mono:      'JetBrains Mono', ui-monospace, Menlo, monospace;
@@ -37,8 +37,8 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .btn-ghost:hover { color: var(--text); border-color: var(--text); }
 
 /* ─── Navbar ───────────────────────────────────────────────────────── */
-#navbar { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: rgba(250,250,248,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 200; transition: box-shadow var(--trans); }
-#navbar.scrolled { box-shadow: 0 2px 16px rgba(20,33,58,0.06); }
+#navbar { position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h); background: rgba(248,249,251,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 200; transition: box-shadow var(--trans); }
+#navbar.scrolled { box-shadow: 0 2px 16px rgba(29,33,39,0.06); }
 .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 28px; height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav-brand { display: flex; flex-direction: column; line-height: 1.2; flex-shrink: 0; text-decoration: none !important; }
 .nav-brand-name { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--navy); }
@@ -68,7 +68,7 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 
 /* ─── HOME hero ────────────────────────────────────────────────────── */
 #home-hero { background: var(--surface); border-bottom: 1px solid var(--border); padding: 84px 0 76px; position: relative; overflow: hidden; }
-#home-hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 50% 60% at 88% 30%, rgba(14,107,96,0.07) 0%, transparent 70%); }
+#home-hero::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 50% 60% at 88% 30%, rgba(31,95,191,0.07) 0%, transparent 70%); }
 .home-hero-inner { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: center; position: relative; z-index: 1; }
 .hero-tag { font-family: var(--mono); font-size: 0.75rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
 .hero-tag::before { content: ''; width: 26px; height: 2px; background: var(--accent); display: inline-block; }
@@ -76,7 +76,7 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .hero-role { font-family: var(--serif); font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 400; font-style: italic; color: var(--accent2); margin-bottom: 18px; }
 .hero-sub { font-size: 1.08rem; color: var(--muted); margin-bottom: 22px; line-height: 1.65; max-width: 600px; }
 .hero-domains { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 34px; }
-.hero-domains span { font-size: 0.78rem; font-weight: 500; color: var(--accent2); background: var(--accent-soft); border: 1px solid #cfe3de; border-radius: 20px; padding: 4px 12px; }
+.hero-domains span { font-size: 0.78rem; font-weight: 500; color: var(--accent2); background: var(--accent-soft); border: 1px solid #cddcf3; border-radius: 20px; padding: 4px 12px; }
 .hero-stats { display: flex; margin-bottom: 34px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); width: fit-content; overflow: hidden; }
 .stat { display: flex; flex-direction: column; align-items: center; padding: 16px 22px; border-right: 1px solid var(--border); }
 .stat:last-child { border-right: none; }
@@ -257,12 +257,12 @@ h1, h2, h3, .serif { font-family: var(--serif); letter-spacing: -0.01em; }
 .contact-info-box address { font-size: 0.9rem; color: var(--muted); font-style: normal; line-height: 1.8; }
 
 /* ─── Footer ───────────────────────────────────────────────────────── */
-footer { background: var(--navy); color: #c7cfdb; padding: 36px 0; }
+footer { background: var(--navy); color: #c9cdd3; padding: 36px 0; }
 .footer-inner { max-width: 1080px; margin: 0 auto; padding: 0 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-.footer-left { font-size: 0.84rem; color: #aab4c3; }
+.footer-left { font-size: 0.84rem; color: #a9afb7; }
 .footer-left strong { color: #fff; }
 .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
-.footer-links a { font-size: 0.82rem; color: #c7cfdb; }
+.footer-links a { font-size: 0.82rem; color: #c9cdd3; }
 .footer-links a:hover { color: #fff; }
 
 /* ─── Responsive ────────────────────────────────────────────────────── */
